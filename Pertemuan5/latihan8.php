@@ -20,4 +20,3 @@
     echo "green box : $greenbox <br>\n";
     echo "purple box : $purplebox <br>\n";
     echo "colorless box : $colorlessbox <br>\n";
-?>

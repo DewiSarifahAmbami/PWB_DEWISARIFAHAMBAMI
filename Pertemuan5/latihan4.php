@@ -5,4 +5,3 @@
     $luas = phi * $r * $r ;
     Echo judul;
     echo "Luas = $luas" ;
-?>

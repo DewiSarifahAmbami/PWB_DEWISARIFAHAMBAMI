@@ -10,4 +10,3 @@
     $f = $e.$d;
     echo $f;
     //nilai $f menjadi Number13, a kombinasi $e dan $f
-?>

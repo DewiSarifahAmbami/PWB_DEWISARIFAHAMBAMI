@@ -1,54 +1,57 @@
 <?php
-    // inisiasi variable yang digunakan
-    // nama peralatan
-    $brg1 = "Buku";
-    $brg2 = "Mouse";
-    $brg3 = "FlashDisk";
-    $brg4 = "Pulpen";
-    // harga per unit peralatan
-    $harga1 = 17500;
-    $harga2 = 30000;
-    $harga3 = 70000;
-    $harga4 = 22300;
-    // jumlah peralatan yang ada
-    $jmlbrg1 = 2;
-    $jmlbrg2 = 5;
-    $jmlbrg3 = 1;
-    $jmlbrg4 = 3;
-    // total harga per jenis peralatan
-    $th1 = $jmlbrg1 * $harga1;
-    $th2 = $jmlbrg2 * $harga2;
-    $th3 = $jmlbrg3 * $harga3;
-    $th4 = $jmlbrg4 * $harga4;
-    // hitung grand total nilai peralatan
-    $tharga = $th1 + $th2+ $th3 + $th4;
-    // besar diskon
-    $diskon = 5;
-    // jumlah total diskon yang diberikan
-    $tdiskon = ($diskon * $tharga)/100;
-    // jumlah yang harus dibayar
-    $tdibayar = $tharga - $tdiskon;
+// inisiasi variable yang digunakan
+// nama peralatan
+$brg1 = "Buku";
+$brg2 = "Mouse";
+$brg3 = "FlashDisk";
+$brg4 = "Pulpen";
+// harga per unit peralatan
+$harga1 = 17500;
+$harga2 = 30000;
+$harga3 = 70000;
+$harga4 = 22300;
+// jumlah peralatan yang ada
+$jmlbrg1 = 2;
+$jmlbrg2 = 5;
+$jmlbrg3 = 1;
+$jmlbrg4 = 3;
+// total harga per jenis peralatan
+$th1 = $jmlbrg1 * $harga1;
+$th2 = $jmlbrg2 * $harga2;
+$th3 = $jmlbrg3 * $harga3;
+$th4 = $jmlbrg4 * $harga4;
+// hitung grand total nilai peralatan
+$tharga = $th1 + $th2 + $th3 + $th4;
+// besar diskon
+$diskon = 5;
+// jumlah total diskon yang diberikan
+$tdiskon = ($diskon * $tharga) / 100;
+// jumlah yang harus dibayar
+$tdibayar = $tharga - $tdiskon;
 ?>
 <html>
-    <head>
+
+<head>
     <title>Daftar Peralatan Yang Dibeli</title>
-    </head>
-    <style TYPE="text/css">
-        body {
-            font-size: 14pt;
-        }
-        table {
-            font-size: 25pt;
-        }
-    </style>
-    <body>
+</head>
+<style TYPE="text/css">
+    body {
+        font-size: 14pt;
+    }
+
+    table {
+        font-size: 25pt;
+    }
+</style>
+
+<body>
     <center>
-        <font face="comic sans serif" size=5 color= "blue">Contoh Perhitungan
-        dengan PHP</font>
+        <font face="comic sans serif" size=5 color="blue">Contoh Perhitungan
+            dengan PHP</font>
         <table border="1" cellspacing="0" cellpadding="3">
             <tr>
                 <td colspan="4" align="center" valign="middle">
-                <b>Daftar Pemesanan Peralatan Kantor</b>
+                    <b>Daftar Pemesanan Peralatan Kantor</b>
                 </td>
             </tr>
             <tr>
@@ -90,7 +93,7 @@
             </tr>
             <tr>
                 <td colspan="3" align="right">
-                Diskon <?php echo "( $diskon % )"; ?></td>
+                    Diskon <?php echo "( $diskon % )"; ?></td>
                 <td align="right"><?php echo $tdiskon; ?></td>
             </tr>
             <tr>
@@ -99,5 +102,6 @@
             </tr>
         </table>
     </center>
-    </body>
+</body>
+
 </html>
